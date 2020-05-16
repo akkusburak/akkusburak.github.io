@@ -99,7 +99,10 @@ author:
   location         : "İstanbul, TR"
   email            :
   links:
-    - label: "Email"
+    - label: "My Resume"
+      icom: "fas fa-file"
+      url: "https://app.luminpdf.com/viewer/5ebfe5791325260017f6bbd6"
+    - label: "burakakkus@zoho.com"
       icon: "fas fa-fw fa-envelope-square"
       url: "mailto:burakakkus@zoho.com"
     - label: "Linkedin"
