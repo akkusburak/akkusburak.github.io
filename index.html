@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="images/pngegg.png" />
+    <title>Rolling Dice</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="headertext">Guess Next Roll!</h1>
+      <button class="return">Return Homepage</button>
+      <button class="btn again">Again!</button>
+      <img id="dice" src="images/pngegg.png" />
+      <button class="btn middle">Start</button>
+    </header>
+    <main>
+      <section class="left">
+        <button class="btn choice1">Higher</button>
+        <button class="btn choice2">Lower</button>
+      </section>
+      <section class="right">
+        <p class="message">Start rolling...</p>
+        <p class="label-score">Score: <span class="score">0</span></p>
+        <p class="label-highscore">
+          Highscore: <span class="highscore">0</span>
+        </p>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
