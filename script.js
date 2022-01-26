@@ -50,6 +50,7 @@ document.querySelector(".choice1").addEventListener("click", function () {
     ).textContent = `You rolled ${randNum}. Will next roll be higher or lower?`;
   } else {
     document.getElementById("dice").src = `images/dice${randNum}.png`;
+    document.getElementById("myHeader").textContent = "Gave Over";
     document.querySelector(".message").textContent = `Your guess is wrong!`;
     makeHidden();
 
@@ -73,6 +74,7 @@ document.querySelector(".choice2").addEventListener("click", function () {
     ).textContent = `You rolled ${randNum}. Will next roll be higher or lower?`;
   } else {
     document.getElementById("dice").src = `images/dice${randNum}.png`;
+    document.getElementById("myHeader").textContent = "Gave Over";
     document.querySelector(".message").textContent = `Your guess is wrong!`;
     makeHidden();
     if (score > highscore) {
@@ -86,6 +88,7 @@ document.querySelector(".choice2").addEventListener("click", function () {
 document.querySelector(".again").addEventListener("click", function () {
   score = 0;
   makeHidden();
+  document.getElementById("myHeader").textContent = "Guess Next Roll!";
   document.querySelector(".middle").textContent = "Start";
   document.getElementById("dice").src = "images/pngegg.png";
   document.querySelector(".middle").style.visibility = "visible";
